@@ -30,7 +30,7 @@ class MailController extends Controller
         $mailEntity->setReplyUsername($request->post('reply_username'));
         $mailEntity->setSubject($request->post('subject'));
         $mailEntity->setUrl($request->post('url', config('app.url')));
-        $mailEntity->setUsername($request->post('username'));
+        $mailEntity->setOriginUsername($request->post('origin_username'));
         $mailEntity->setFromEmail($request->post('from_email'));
         $mailEntity->setFromName($request->post('from_name'));
 

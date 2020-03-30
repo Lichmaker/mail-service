@@ -30,7 +30,7 @@ class ReplyNotice extends Mailable
      *
      * @var
      */
-    private $url, $appName, $username, $originContent, $replyUsername, $content, $articleUrl;
+    private $url, $appName, $originUsername, $originContent, $replyUsername, $content, $articleUrl;
 
     /**
      * Create a new message instance.
@@ -69,11 +69,11 @@ class ReplyNotice extends Mailable
     }
 
     /**
-     * @param mixed $username
+     * @param mixed $originUsername
      */
-    public function setUsername($username): void
+    public function setOriginUsername($originUsername): void
     {
-        $this->username = $username;
+        $this->originUsername = $originUsername;
     }
 
     /**

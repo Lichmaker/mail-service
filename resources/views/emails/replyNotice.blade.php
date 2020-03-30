@@ -1,5 +1,5 @@
-@component('mail::message', ['url' => $url, 'appName' => $systemName])
-{{ $username }} 您好！
+@component('mail::message', ['url' => $url, 'appName' => $appName])
+{{ $originUsername }} 您好！
 
 您在我们网站中的评论有一条新回复哦，请注意查收 ^ ^
 
